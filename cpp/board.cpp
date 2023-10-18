@@ -770,7 +770,7 @@ Algorithm:
         4) Otherwise, reset count, clear vector, and use restart positions,
         which will be incremented +1 from where the current pattern started.
         This is necessary to not skip over any position that reset the pattern 
-        is are part of the next pattern right away
+        but are part of the next pattern right away
         5) Pattern locations are returned if pattern is found, or empty vector
         is returned
 Assistance Received: none 
