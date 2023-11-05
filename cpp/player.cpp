@@ -499,10 +499,10 @@ string Player::find1(){
     // from center. Two options provided, if one is taken, return other
     if (moveCount == 2){
         if (m_board.getColorByPos(5,9) == EMPTY){ 
-            return m_board.convertRowCol(5,9);
+            return m_board.convertRowCol(6,9);
         }
         else {
-            return m_board.convertRowCol(13,9);
+            return m_board.convertRowCol(12,9);
         }
     }
 
@@ -521,6 +521,14 @@ string Player::find1(){
     // Pattern _*C_ (star is returning valye)
     pat[2] = getColor();
     pat[1] = EMPTY;
+    patternLoc = m_board.findPattern(pat);
+    if (!patternLoc.empty()){
+        return patternLoc[1];
+    }
+
+    // Pattern C*_C (star is returning valye)
+    pat[0] = pat[3] = getColor();
+    pat[2] = EMPTY;
     patternLoc = m_board.findPattern(pat);
     if (!patternLoc.empty()){
         return patternLoc[1];
