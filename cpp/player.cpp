@@ -498,7 +498,7 @@ string Player::find1(){
     // If move count is 2, must place stone 3 intersections away
     // from center. Two options provided, if one is taken, return other
     if (moveCount == 2){
-        if (m_board.getColorByPos(5,9) == EMPTY){ 
+        if (m_board.getColorByPos(6,9) == EMPTY){ 
             return m_board.convertRowCol(6,9);
         }
         else {
