@@ -344,8 +344,8 @@ bool Board::makeMove(char a_color, int a_row, int a_column){
     // Check that row and column is empty for stone to be placed
     if (m_board[a_row][a_column] == EMPTY){
         if (m_moveCount == 2){
-            if (a_row >= 6 && a_row <= 12 &&
-                a_column >= 6 && a_column <= 12){
+            if (a_row > 6 && a_row < 12 &&
+                a_column > 6 && a_column < 12){
                 // Remind restriction 
                 cout << "On the second turn, the first player must place another white stone"  
                     << " at least 3 intersections away from the first white stone." << endl;
