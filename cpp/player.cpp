@@ -526,14 +526,15 @@ string Player::find1(){
         return patternLoc[1];
     }
 
-    // Pattern C*_C (star is returning valye)
-    pat[0] = pat[3] = getColor();
-    pat[2] = EMPTY;
+     // Pattern _*C_ (star is returning valye)
+    pat[2] = getColor();
+    pat[1] = EMPTY;
     patternLoc = m_board.findPattern(pat);
     if (!patternLoc.empty()){
         return patternLoc[1];
     }
     
+
     // Pattern *_CO (star is returning valye)
     pat[3] = getOpponentColor();
     patternLoc = m_board.findPattern(pat);
