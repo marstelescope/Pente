@@ -54,7 +54,7 @@
                   (rowColToMoveName (first winningOpponentInTwo)(second winningOpponentInTwo))
                   winningOpponentInTwo)
 
-                  ;; Executed if oppononent can be captured
+                  ;; Executed if opponent can be captured
                   ((not (equal captureMax ()))
                   (princ "Capture opponent: ")
                   (rowColToMoveName (first captureMax)(second captureMax))
