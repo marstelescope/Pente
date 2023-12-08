@@ -445,7 +445,7 @@
 ; Algorithm: 
 ;         1. Check each direction, while within board bounds, if capture pattern exists.
 ;         2. If so, remove captured stones, and pass updated board and score back to 
-;            function until all directions exhuasted.
+;            function until all directions exhausted.
 ;         3. When no more captures are found, return updated board and score.
 ; Assistance Received: none 
 ; ***********************************************************************
