@@ -590,8 +590,7 @@
 
 ; ********************************************************************* 
 ; Function Name: randomMove
-; Purpose: find single stones near which another stone can be placed
-;            while also avoiding being captured
+; Purpose: generate a random move
 ; Parameters: 
 ;        board - current board state 
 ;        color - color being placed
